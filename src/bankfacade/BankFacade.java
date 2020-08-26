@@ -29,13 +29,13 @@ public class BankFacade {
         System.out.println("Name = " + customer1.getCustomerName());
         System.out.println("Has " + customer1.getNumAccounts() + " accounts");
         
-        account = object.getBankAccount(customer1, 12345);
+        account = object.getBankAccount(customer1, 11111);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
-        account = object.getBankAccount(customer1, 12346);
+        account = object.getBankAccount(customer1, 22222);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
         
-        System.out.println("--- Do Deposit Account 12346 ---");
-        object.doDeposit(1000, customer1, 12346);
+        System.out.println("--- Do Deposit Account 22222 ---");
+        object.doDeposit(1000, customer1, 22222);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
          
         System.out.println("--- All Account ---");
@@ -51,13 +51,13 @@ public class BankFacade {
         System.out.println("Name = " + customer2.getCustomerName());
         System.out.println("Has " + customer2.getNumAccounts() + " accounts");
         
-        account = object.getBankAccount(customer2, 12347);
+        account = object.getBankAccount(customer2, 33333);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
-        account = object.getBankAccount(customer2, 12348);
+        account = object.getBankAccount(customer2, 44444);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
         
-        System.out.println("--- Do Deposit Account 12348 ---");
-        object.doDeposit(1000, customer2, 12348);
+        System.out.println("--- Do Deposit Account 44444 ---");
+        object.doDeposit(1000, customer2, 44444);
         System.out.println("Account Number: " + account.getAccountNumber() + " has " + account.getBalance());
          
         System.out.println("--- All Account ---");

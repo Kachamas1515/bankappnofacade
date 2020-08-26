@@ -21,20 +21,20 @@ public class MyFacade {
     private ArrayList<CustomerIf> customers = new ArrayList();
     MyFacade(){
         ArrayList<AccountIf> cust1Accounts = new ArrayList();
-        AccountIf account = new BankAccount(12345);
+        AccountIf account = new BankAccount(11111);
         account.deposit(500);
         cust1Accounts.add(account);
-        account = new BankAccount(12346);
+        account = new BankAccount(22222);
         account.deposit(1000);
         cust1Accounts.add(account);
         CustomerIf customer1 = new BankCustomer("A", cust1Accounts);
         customers.add(customer1);
 
         ArrayList<AccountIf> cust2Accounts = new ArrayList();
-        account = new BankAccount(12347);
+        account = new BankAccount(33333);
         account.deposit(500);
         cust2Accounts.add(account);
-        account = new BankAccount(12348);
+        account = new BankAccount(44444);
         account.deposit(1000);
         cust2Accounts.add(account);
         CustomerIf customer2 = new BankCustomer("B", cust2Accounts);
